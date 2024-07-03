@@ -418,9 +418,7 @@ body.dark-theme{
 .projects__button{
   padding: .5;
 }
-/* .projects__modal:hover{
- 
-} */
+
 .projects__card:hover .projects__modal{
   bottom: 0;
   left: 0;
