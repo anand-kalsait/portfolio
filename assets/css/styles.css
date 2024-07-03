@@ -133,7 +133,15 @@ body.dark-theme{
   background-color: hsl(var(--hue), 25%, 25%);
 }
 
+.dark-theme .scroll-up-btn{
+  color: var(--first-color-alt);
+  background-color: var(--body-color);
+}
 
+.dark-theme .scroll-up-btn:hover{
+  color: var(--body-color);
+  background-color: var(--first-color);
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
@@ -146,6 +154,41 @@ body.dark-theme{
   gap: 1.5rem;
 }
 
+.scroll-up-btn{
+  all: unset;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 35px;
+  width: 35px;
+  opacity: 0;
+  z-index: 100;
+  transform: translateY(100px);
+  background-color: var(--body-color);
+  color: var(--first-color-alt);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+}
+
+.scroll-up-btn i{
+  font-size: 2.25rem;
+}
+
+.scroll-up-btn:hover{
+  color: var(--body-color);
+  background-color: var(--first-color);
+  transform: scale(1.25);
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
 /*=============== PROFILE ===============*/
 .profile{
   position: relative;
@@ -472,7 +515,7 @@ body.dark-theme{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 575px) {
   .container{
     margin-left: 1.5rem; 
     margin-right: 1.5rem;
@@ -521,6 +564,10 @@ body.dark-theme{
     margin-left: auto;
     margin-right: auto;
   }
+  .scroll-up-btn{
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
 
   .change-theme{
     top: 2.5rem;
@@ -543,7 +590,7 @@ body.dark-theme{
   }
 
   .profile__perfil img{
-    width: 135px;
+    width: 150px;
   }
 
   .profile__profession{
