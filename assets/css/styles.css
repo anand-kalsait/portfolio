@@ -91,6 +91,7 @@ img {
 
 .change-theme:hover{
   color: var(--first-color);
+  font-size: 1.5rem;
 }
 
 /*========== Variables Dark theme ==========*/
@@ -258,7 +259,7 @@ body.dark-theme{
 
 .profile__social-link:hover{
   color: var(--first-color);
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .profile__info{
